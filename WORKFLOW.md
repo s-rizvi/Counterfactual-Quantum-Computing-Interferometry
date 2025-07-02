@@ -6,14 +6,37 @@ This project is structured in four progressive stages, moving from idealized uni
 
 ## 1️⃣ Begin with Unitary Matrix Mechanics
 
-- Use **QuTiP** along with **NumPy** to simulate the core quantum optical components:
-  - Beam splitters
-  - Mirrors
-  - Phase shifters
-  - Detectors
+Before we do anything, let's create a filesystem structure that includes all modules necessary for our project to succeed.
 
-- Represent quantum states as vectors and operators as matrices.
-- Simulate **wavefunction evolution step-by-step** through each interferometer configuration.
+cqci_project/
+├── simulator/
+│   ├── __init__.py
+│   ├── beam_splitter.py
+│   ├── mirror.py
+│   ├── detector.py
+│   ├── interferometer.py
+│   └── utils.py
+├── visuals/
+│   ├── __init__.py
+│   ├── diagram.py
+│   └── plotting.py
+├── circuithub/
+│   ├── __init__.py
+│   ├── qiskit_module.py
+│   └── pennylane_module.py
+├── decoherence/
+│   ├── __init__.py
+│   ├── lindblad_solver.py
+│   └── noise_models.py
+├── examples/
+│   ├── __init__.py
+│   ├── mzi_example.py
+│   └── quantum_eraser.py
+└── tests/
+    ├── __init__.py
+    └── test_interferometer.py
+
+Step 1: The project is based on the simulator module, so let's start building our interferometer simulator, starting with beam_splitter.py, mirror.py, detector.py, and interferometer.py. Then we put miscellaneous functions in utils.py and set up __init__.py.
 
 ---
 

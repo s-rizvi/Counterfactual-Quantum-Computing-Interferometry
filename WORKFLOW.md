@@ -8,10 +8,10 @@ This project is structured in four progressive stages, moving from idealized uni
 
 Before we do anything, let's create a filesystem structure that includes all modules necessary for our project to succeed.
 
-> cqci_project/
-> ├── simulator/
-> │   ├── __init__.py
-> │   ├── beam_splitter.py
+cqci_project/
+├── simulator/
+│   ├── __init__.py
+│   ├── beam_splitter.py
 │   ├── mirror.py
 │   ├── detector.py
 │   ├── interferometer.py
@@ -37,6 +37,8 @@ Before we do anything, let's create a filesystem structure that includes all mod
     └── test_interferometer.py
 
 Step 1: The project is based on the simulator module, so let's start building our interferometer simulator, starting with beam_splitter.py, mirror.py, detector.py, and interferometer.py. Then we put miscellaneous functions in utils.py and set up __init__.py.
+
+Step 2:
 
 ---
 

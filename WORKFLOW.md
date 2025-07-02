@@ -1,17 +1,58 @@
-# Workflow for The Project
+# 🛠️ Workflow for the C.Q.C.I. Project
 
-1. Begin with unitary matrix mechanics
-* Use QuTiP + basic NumPy matrices to replicate your beam splitter, mirror, detector modules.
-* Simulate wavefunction evolution through each stage.
+This project is structured in four progressive stages, moving from idealized unitary simulations to hybrid circuit-based implementations and decoherence modeling.
 
-2. Visualize tabletop setups
-* Use QOptCraft to map component positions.
-* Overlay wavefunction amplitudes or probabilities at each optical element in static diagrams using Matplotlib.
+---
 
-3. Wrap with noise + decoherence (optional)
-* Transition to Lindblad master equations in QuTiP using built-in solvers or your own RK4 integrator 
-* Test randomness and imperfections with SOQCS.
+## 1️⃣ Begin with Unitary Matrix Mechanics
 
-4. Include both PennyLane & Qiskit
-* For purely gate-based quantum analogues, you can recreate the same interferometer behavior using qubit circuits in PennyLane and Qiskit.
-* Compare their performance and output (state vectors, probability histograms)—great for a portfolio piece.
+- Use **QuTiP** along with **NumPy** to simulate the core quantum optical components:
+  - Beam splitters
+  - Mirrors
+  - Phase shifters
+  - Detectors
+
+- Represent quantum states as vectors and operators as matrices.
+- Simulate **wavefunction evolution step-by-step** through each interferometer configuration.
+
+---
+
+## 2️⃣ Visualize Tabletop Setups
+
+- Use **QOptCraft** or manual schematics to define optical layouts.
+- Recreate experimental configurations as labeled 2D diagrams.
+- Use **Matplotlib** to generate static images:
+  - Optical components
+  - Light paths
+  - Wavefunction amplitudes/probabilities at key nodes
+  - Final detector probabilities
+
+*(No animations—only still diagrams designed for clarity and pedagogy.)*
+
+---
+
+## 3️⃣ Wrap with Noise and Decoherence (Optional)
+
+- Transition to **Lindblad master equations** in QuTiP for open system simulations.
+- Use QuTiP's solvers or implement your own **Runge-Kutta 4th Order (RK4)** integrator for more control.
+- Explore imperfections via frameworks like **SOQCS**:
+  - Lossy optics
+  - Detector inefficiencies
+  - Misalignment jitter
+
+---
+
+## 4️⃣ Include Both PennyLane & Qiskit
+
+- Recreate the interferometry logic as **quantum circuits** using qubits:
+  - Use **PennyLane** and **Qiskit** to model gate-based analogues of beam splitters and phase shifters.
+  - Build and visualize logic-gate equivalents to the same experiments.
+
+- Compare results from matrix mechanics and circuit-based quantum simulation:
+  - State vectors
+  - Probabilities
+  - Efficiency and performance (especially on low-end hardware)
+
+---
+
+This staged approach ensures a pedagogical ramp-up from simple to complex, while showcasing a variety of quantum frameworks within a consistent experimental structure.

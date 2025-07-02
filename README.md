@@ -1,4 +1,4 @@
-# 🧪 Counterfactual Quantum Computing Interferometry (C.Q.C.I.)
+# Counterfactual Quantum Computing Interferometry (C.Q.C.I.)
 
 > A visual and programmable testbed for simulating and understanding quantum interferometry using matrix mechanics, with support for PennyLane and Qiskit.
 

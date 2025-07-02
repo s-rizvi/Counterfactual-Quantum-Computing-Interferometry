@@ -8,10 +8,10 @@ This project is structured in four progressive stages, moving from idealized uni
 
 Before we do anything, let's create a filesystem structure that includes all modules necessary for our project to succeed.
 
-cqci_project/
-├── simulator/
-│   ├── __init__.py
-│   ├── beam_splitter.py
+> cqci_project/
+> ├── simulator/
+> │   ├── __init__.py
+> │   ├── beam_splitter.py
 │   ├── mirror.py
 │   ├── detector.py
 │   ├── interferometer.py

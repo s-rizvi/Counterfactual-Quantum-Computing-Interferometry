@@ -50,7 +50,7 @@ This project serves **three purposes**:
 | Folder/File                          | Description                                                                                                                   |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | [`README.md`](./README.md)           | This file — a guide to the project and its structure.                                                                         |
-| [`Project_Background.pdf`](./Project_Background.pdf) | 10 slides covering the necessary background for understanding the physics behind this project  |
+| [`BACKGROUND.pdf`](./BACKGROUND.pdf) | 10 slides covering the necessary background for understanding the physics behind this project  |
 
 ---
 
